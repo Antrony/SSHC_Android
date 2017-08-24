@@ -1,15 +1,15 @@
-package com.ansel.arcians.sshc_android.ual;
+package com.ansel.arcians.sshc_android.nal;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-class APIClient {
+public class APIClient {
 
     private static Retrofit retrofit = null;
 
-    static Retrofit getClient() {
+    public static Retrofit getClient() {
 
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
@@ -17,7 +17,7 @@ class APIClient {
 
 
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.1.3:8069/sshc/")
+                .baseUrl("http://192.168.10.174:9009/api/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build();

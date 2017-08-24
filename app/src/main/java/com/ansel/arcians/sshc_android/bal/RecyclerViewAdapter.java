@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.ansel.arcians.sshc_android.R;
-import com.ansel.arcians.sshc_android.bal.pojo.MultipleResource;
 
 import java.util.List;
 

@@ -1,13 +1,12 @@
 package com.ansel.arcians.sshc_android.bal;
 
-import com.ansel.arcians.sshc_android.bal.pojo.MultipleResource;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ZoneObject {
-    @SerializedName("zone")
+    @SerializedName("results")
     public List<Datum> zones = new ArrayList<>();
 
     public class Datum {
